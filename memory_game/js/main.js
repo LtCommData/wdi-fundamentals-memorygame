@@ -26,8 +26,8 @@ function checkForMatch() {
     alert("You found a match!");
   } else {
     alert("Sorry, try again!");
-  }
-}
+  };
+};
 function flipCard() {
   const cardId = this.getAttribute('data-id');
   cardsInPlay.push(cards[cardId].rank);
@@ -37,8 +37,8 @@ function flipCard() {
   this.setAttribute('src', cards[cardId].cardImage);
   if (cardsInPlay.length === 2) {
     checkForMatch();
-  }
-}
+  };
+};
 function createBoard() {
   for (var i = 0; i < cards.length; i++) {
     var cardElement = document.createElement('img');
@@ -46,7 +46,12 @@ function createBoard() {
     cardElement.setAttribute('data-id', i);
     cardElement.addEventListener('click', flipCard);
     document.getElementById('game-board').appendChild(cardElement);
-  }
-}
+  };
+};
 
 createBoard();
+
+function resetBoard() {
+  var resetButton = document.getElementById('reset');
+  resetButton.addEventListener('click', createBoard);
+};

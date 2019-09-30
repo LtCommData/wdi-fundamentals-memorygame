@@ -46,13 +46,15 @@ p {
   line-height: 26px;
   font-size: 18px;
 }
-.copyright {
+button {
   font-family: Raleway;
-  float: left;
-}
-.message {
-  font-family: Raleway;
-  float: right;
+  background-color: #92A6D1;
+  color: #00041A;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 20px;
+  padding: 8px 10px;
+  margin-top: 10px;
 }
 footer {
   text-transform: uppercase;
@@ -62,6 +64,14 @@ footer {
   letter-spacing: .08cm;
   font-weight: 500;
   margin: 10px 0;
+}
+.copyright {
+  font-family: Raleway;
+  float: left;
+}
+.message {
+  font-family: Raleway;
+  float: right;
 }
 .luv {
   color: #D4534A;
